@@ -10,7 +10,7 @@ public Plugin myinfo = {
     name = "Enemy names",
     author = "Dron-elektron",
     description = "Allows you to see the names of enemies at the end of the round",
-    version = "0.1.0",
+    version = "1.0.0",
     url = "https://github.com/dronelektron/enemy-names"
 };
 
