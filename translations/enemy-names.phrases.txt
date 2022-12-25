@@ -1,0 +1,8 @@
+"Phrases"
+{
+    "Enemy name"
+    {
+        "#format"   "{1:N},{2:d}"
+        "en"    "{1} ({2} hp)"
+    }
+}

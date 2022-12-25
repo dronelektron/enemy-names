@@ -1,6 +1,6 @@
 # Enemy names
 
-Allows you to see the names of enemies
+Allows you to see the names of enemies at the end of the round
 
 ### Supported Games
 
