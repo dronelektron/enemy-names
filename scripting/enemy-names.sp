@@ -10,7 +10,7 @@ public Plugin myinfo = {
     name = "Enemy names",
     author = "Dron-elektron",
     description = "Allows you to see the names of enemies at the end of the round",
-    version = "1.0.0",
+    version = "1.0.1",
     url = "https://github.com/dronelektron/enemy-names"
 };
 
@@ -18,6 +18,10 @@ public void OnPluginStart() {
     HookEvent("dod_round_start", Event_RoundStart);
     HookEvent("dod_round_win", Event_RoundWin);
     LoadTranslations("enemy-names.phrases");
+}
+
+public void OnMapStart() {
+    UseCase_ResetEnemyNamesTimer();
 }
 
 public void Event_RoundStart(Event event, const char[] name, bool dontBroadcast) {
