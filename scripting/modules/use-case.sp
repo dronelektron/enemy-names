@@ -1,5 +1,9 @@
 static Handle g_enemyNamesTimer = null;
 
+void UseCase_ResetEnemyNamesTimer() {
+    g_enemyNamesTimer = null;
+}
+
 void UseCase_CreateEnemyNamesTimer() {
     g_enemyNamesTimer = CreateTimer(ENEMY_NAMES_TIMER_INTERVAL, UseCaseTimer_EnemyNames, _, ENEMY_NAMES_TIMER_FLAGS);
 }

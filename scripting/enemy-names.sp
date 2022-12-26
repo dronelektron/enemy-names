@@ -20,6 +20,10 @@ public void OnPluginStart() {
     LoadTranslations("enemy-names.phrases");
 }
 
+public void OnMapStart() {
+    UseCase_ResetEnemyNamesTimer();
+}
+
 public void Event_RoundStart(Event event, const char[] name, bool dontBroadcast) {
     UseCase_DestroyEnemyNamesTimer();
 }
